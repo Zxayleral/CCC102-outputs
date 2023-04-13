@@ -87,7 +87,7 @@ public class RationalNumber {
     }
 
     public RationalNumber toSimplestForm() {
-        int factor = gcf(this.denominator, this.numerator);
+        int factor = RationalNumber.gcf(this.denominator, this.numerator);
         return new RationalNumber(this.numerator / factor, this.denominator / factor);
     }
 
@@ -100,7 +100,7 @@ public class RationalNumber {
     public RationalNumber add(RationalNumber rat) {
         // get lcm of the denominators.
         
-        int newDenominator = lcm(this.denominator, rat.denominator);
+        int newDenominator = RationalNumber.lcm(this.denominator, rat.denominator);
         
         // add the two numerators in terms of fractional computation [(lcm / denominator) * numerator]
 
@@ -113,7 +113,7 @@ public class RationalNumber {
     public RationalNumber subtract(RationalNumber rat) {
         // get lcm of the denominators.
         
-        int newDenominator = lcm(this.denominator, rat.denominator);
+        int newDenominator = RationalNumber.lcm(this.denominator, rat.denominator);
         
         // add the two numerators in terms of fractional computation [(lcm / denominator) * numerator]
 
