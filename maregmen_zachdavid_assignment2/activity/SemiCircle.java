@@ -1,6 +1,6 @@
-package com;
+package activity;
 
-public class SemiCircle extends com.Circle{
+public class SemiCircle extends Circle {
 
     SemiCircle(double radius) {
         super(radius);

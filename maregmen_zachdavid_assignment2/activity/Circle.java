@@ -1,6 +1,6 @@
-package com;
+package activity;
 
-public class Circle implements com.Interfaces.CircleInterface{
+public class Circle implements Interfaces.CircleInterface{
     protected double radius;
     final double PI = 3.14;
 

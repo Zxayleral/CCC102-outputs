@@ -1,6 +1,6 @@
-package com;
+package activity;
 
-public class Rectangle implements com.Interfaces.Quadrilateral {
+public class Rectangle {
     private double width;
     private double height;
 

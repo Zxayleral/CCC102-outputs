@@ -1,4 +1,4 @@
-package com;
+package activity;
 
 public class Trapezium {
     

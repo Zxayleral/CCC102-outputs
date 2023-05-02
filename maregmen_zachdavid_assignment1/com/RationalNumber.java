@@ -82,8 +82,8 @@ public class RationalNumber {
         return (double) this.numerator / this.denominator;
     }
 
-    public String toString() {
-        return this.numerator + "/" + this.denominator; 
+    public void toString() {
+        System.out.println(this.numerator + "/" + this.denominator); 
     }
 
     public RationalNumber toSimplestForm() {

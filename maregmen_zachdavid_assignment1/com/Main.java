@@ -31,10 +31,10 @@ public class Main {
         RationalNumber simpleFormOfN1 = n1.toSimplestForm();
 
         double doubleOfN1 = n1.toDouble();
-        System.out.println("Double form of " + n1.toString() + ": " + doubleOfN1);
-        System.out.println("Rational number n2 in string form: " + n2.toString());
-        System.out.println("Simplest form of " + n1.toString() + ": " + simpleFormOfN1.toString());
-        System.out.println("Comparison of " + n1.toString() + " and " + n2.toString() + ": " + n1.compareTo(n2));
+        System.out.println("Double form of "); n1.toString(); 
+        System.out.println("Rational number n2 in string form: "); n2.toString();
+        System.out.println("Simplest form of n1: "); simpleFormOfN1.toString();
+        System.out.println("Comparison of n1 and n2: " + n1.compareTo(n2));
         
         RationalNumber sum = n1.add(n2);
         RationalNumber difference = n1.subtract(n2);
@@ -42,16 +42,16 @@ public class Main {
         RationalNumber product = n1.multiply(n2);
         
 
-        System.out.println("Sum of " + n1.toString() + " + " + n2.toString() + " : " + sum.toString());
-        System.out.println("Difference of " + n1.toString() + " - " + n2.toString() + " : " + difference.toString());
-        System.out.println("Quotient of " + n1.toString() + " / " + n2.toString() + " : " + quotient.toString());
-        System.out.println("Product of " + n1.toString() + " * " + n2.toString() + " : " + product.toString());
+        System.out.println("Sum of n1 + n2 : "); sum.toString();
+        System.out.println("Difference of n1 - n2 : "); difference.toString();
+        System.out.println("Quotient of n1 / n2 : "); quotient.toString();
+        System.out.println("Product of n1 * n2 : "); product.toString();
 
         n1.setDenominator(0);
         boolean valid = RationalNumber.isValid(n1);
         System.out.println("Is n1 valid? " + valid);
         RationalNumber reciprocalOfN1 = n1.reciprocal();
-        System.out.println("Reciprocal of " + n1.toString() + " = " + reciprocalOfN1.toString());
+        System.out.println("Reciprocal of n1 = "); reciprocalOfN1.toString();
 
     }
 }

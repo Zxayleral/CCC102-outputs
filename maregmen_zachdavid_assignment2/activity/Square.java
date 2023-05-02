@@ -1,6 +1,6 @@
-package com;
+package activity;
 
-public class Square implements com.Interfaces.Shape{
+public class Square implements Interfaces.Shape {
     private double side;
 
     // Getter 
