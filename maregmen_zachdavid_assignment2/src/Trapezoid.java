@@ -18,4 +18,15 @@ public class Trapezoid extends Parallelogram {
         return ((this.base + this.secondBase) / 2) * this.height;
     }
 
+    public String toString() {
+        return String.format(
+            "Circle [<width=%f>, <height=%f>, <firstDiagonal=%f>, <firstDiagonal=%f>, <area=%f>, <perimeter=%f>]", 
+            this.base, 
+            this.height,
+            this.side,
+            this.secondSide,
+            this.getArea(), 
+            this.getPerimeter()
+            ); 
+    }
 }

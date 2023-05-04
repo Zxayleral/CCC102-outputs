@@ -14,5 +14,13 @@ public class Triangle extends Parallelogram{
         return super.getPerimeter();
     }
 
-
+    public String toString() {
+        return String.format(
+            "Circle [<base=%f>, <height=%f>, <area=%f>, <perimeter=%f>]", 
+            this.base, 
+            this.height, 
+            this.getArea(), 
+            this.getPerimeter()
+            ); 
+    }
 }

@@ -1,7 +1,5 @@
 abstract class Shape {
-    public String toString() {
-        return super.toString();
-    }
+    public abstract String toString();
 
     public abstract double getArea();
 

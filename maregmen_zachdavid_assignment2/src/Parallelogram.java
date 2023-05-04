@@ -1,4 +1,13 @@
-public class Parallelogram extends Shape{
+/*
+ * Parallelogram Class
+ * Author: Zach David B. Maregmen
+ * 
+ * This class has its own attributes hence I did not extend any other class.
+ * 
+ * A parallelogram has a side, a base, and a height.
+ */
+
+public class Parallelogram extends Shape {
     double height;
     double base;
     double side;
@@ -16,4 +25,16 @@ public class Parallelogram extends Shape{
     public double getArea() {
         return base * height;
     }
+
+    public String toString() {
+        return String.format(
+            "Circle [<base=%f>, <side=%f>, <height=%f>, <area=%f>, <perimeter=%f>]", 
+            this.base, 
+            this.side,
+            this.height,
+            this.getArea(), 
+            this.getPerimeter()
+            ); 
+    }
+
 }

@@ -14,4 +14,14 @@ public class Rectangle extends Shape {
     public double getArea() {
         return this.width * this.height;
     }
+
+    public String toString() {
+        return String.format(
+            "Circle [<base=%f>, <height=%f>, <area=%f>, <perimeter=%f>]", 
+            this.width,
+            this.height,
+            this.getArea(), 
+            this.getPerimeter()
+            ); 
+    }
 }
