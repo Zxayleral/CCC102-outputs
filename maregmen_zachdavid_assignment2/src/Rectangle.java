@@ -1,3 +1,12 @@
+/*
+ * Rectangle Class
+ * Author: Zach David B. Maregmen
+ * 
+ * This class has its own attributes hence I did not extend any other class.
+ * 
+ * It only has a width and a height.
+ */
+
 public class Rectangle extends Shape {
     double width;
     double height;
@@ -7,10 +16,17 @@ public class Rectangle extends Shape {
         this.height = height;
     }
 
+
+    /*
+     * Perimeter is just twice the sum of the width and height
+     */
     public double getPerimeter() {
         return (this.width + this.height) * 2;
     }
 
+    /*
+     * Are is just the product of the width and height
+     */
     public double getArea() {
         return this.width * this.height;
     }
